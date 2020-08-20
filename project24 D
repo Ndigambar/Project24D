@@ -1,0 +1,213 @@
+import pyttsx3
+import os
+
+pyttsx3.speak(" hello..! how can i help you")
+
+
+while True:
+	print("chat with me with your requirements : "  , end='')
+	p = input()
+
+	# print(p)
+	# os.system(p)
+    
+    
+	if (("run" in p) or ("open" in p) or ("start" in p )) and (("explorer" in p) or ("this pc" in p)) and ((("dont" not in p) or ("don`t" not in p) or ("not" not in p))): 
+	  pyttsx3.speak("opening windows explorer")    
+	  os.system("start explorer")  
+      
+	elif (("shutdown" in p)) and (("pc" in p) or ("this" in p) or (" machine" in p ) or (" computer" in p )) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("shutting down your pc") 
+	  os.system("shutdown /s")
+    
+	elif (("restart" in p)) and (("pc" in p) or ("this" in p) or (" machine" in p ) or (" computer" in p )) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("restarting your pc")        
+	  os.system("shutdwn /r")
+
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("cmd" in p) or ("command" in p) or ("prompt" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening cmd")        
+	  os.system("start cmd")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("control" in p) and ("panel" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening control panel")        
+	  os.system("start control")  
+
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("chrome" in p) or ("chrome browser" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening chrome browser")        
+	  os.system("chrome")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("edge" in p) or ("microsoft edge" in p) or ("edge browser " in p) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft edge browser")        
+	  os.system("start msedge")    
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("internet" in p) and ("explorer" in p) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening internet explorer")        
+	  os.system("start iexplore")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and  (("notepad" in p) or ("editor" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)) :
+	  pyttsx3.speak("opening notepad")        
+	  os.system("notepad")
+
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("player" in p) and ("media" in p) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening windows media player")        
+	  os.system("wmplayer")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("store" in p) or ("windows store" in p) or ("app store" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening ms store")        
+	  os.system("start ms-windows-store:")  
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("news" in p) or ("microsoft news" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft news")        
+	  os.system("start msnews:")     
+
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("camera" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening camera")        
+	  os.system("start microsoft.windows.camera:")    
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("calc" in p) or ("calculator" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening calculator")        
+	  os.system("start calc")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("calender" in p) or ("planner" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening calender")       
+	  os.system("start outlookcal:")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("clock" in p) or ("time" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening alarm and clock")        
+	  os.system("start ms-clock:")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("security" in p) or ("windows defender" in p) or ("defender" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening windows defender")        
+	  os.system("start windowsdefender:")
+            
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("access" in p) or ("microsoft access" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft access")        
+	  os.system("start msaccess")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("excel" in p) or ("microsoft ecxel" in p) or ("ms excel" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft Excel")        
+	  os.system("start excel")
+
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("publisher" in p) or ("mspublisher" in p) or ("microsoft publisher" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft Publisher")        
+	  os.system("start mspub")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("outlook" in p) or ("msoutlook" in p) or ("microsoft outlook" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft outlook")        
+	  os.system("start outlook")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("poewer point" in p) or ("mspowerpoint" in p) or ("microsoft powerpoint" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft powerpoint")        
+	  os.system("start powerpnt")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("word" in p) or ("msword" in p) or ("microsoft word" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft word")        
+	  os.system("start winword")    
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("vlc" in p) or ("video player" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening VLC media player")        
+	  os.system("start vlc")    
+       
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("python" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening python interpretor")        
+	  os.system("start python")  
+            
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("google" in p) or ("ok google" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening google")        
+	  os.system("start chrome google.com")  
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("facebook" in p) or ("fb" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening facebook")        
+	  os.system("start chrome facebook.com") 
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("youtube" in p) or ("you tube" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening youtube")        
+	  os.system("start chrome youtube.com")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("linkedin" in p) or ("linked" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening linkedIn")        
+	  os.system("start chrome linkedin.com")  
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("instragram" in p) or ("insta" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening instagram")        
+	  os.system("start chrome instagram.com")
+
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("pintrest" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):  
+	  pyttsx3.speak("opening pintrest")        
+	  os.system("start chrome pintrest.comb") 
+        
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("amazon" in p) or ("amazon shopping" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening amazon shoppin site")        
+	  os.system("start chrome amazon.com")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("twitter" in p) or ("twit" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening twitter")        
+	  os.system("start chrome twitter.com")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("flipkart" in p) or ("flipkart shopping" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening flipkart shopping site")        
+	  os.system("start chrome flipkart.com")
+      
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("myntra" in p) or ("mytra shopping" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening myntra shopping site")        
+	  os.system("start chrome myntra.com")
+        
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("photos" in p) or ("galary" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening photos")        
+	  os.system("start ms-photos:")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("people" in p) or ("contacts" in p) or ("connect" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening people")        
+	  os.system("start ms-people:") 
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("settings" in p) or ("setting" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening PC settings")        
+	  os.system("start ms-settings:")
+    
+	elif (("run" in p) or ("open" in p) or  ("start" in p )) and (("action " in p) or (" action center" in p) or ("wifi" in p) or ("bluetooth" in p) or ("aeroplane mode" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("please choose desired actions from action center")        
+	  os.system("start ms-actioncenter:") 
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("gmail" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening Gmail")        
+	  os.system("start chrome gmail.com")
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("maps" in p) or ("map" in p) or ("directions"in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening microsoft maps")        
+	  os.system("start ms-drive-to:") 
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("pdf reader" in p) or ("adobe pdf" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening Adobe pdf reader")        
+	  os.system("start acrord32") 
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("skype" in p))and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):  
+	  pyttsx3.speak("opening skype")        
+	  os.system("start skype:") 
+    
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("bin" in p) or ("recycle" in p)) and (("dont" not in p) or ("don`t" not in p) or ("not" not in p)):
+	  pyttsx3.speak("opening Recycle Bin folder")
+	  os.system("start explorer.exe shell:RecycleBinFolder")   
+        
+#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
+#	  os.system("start msedge")    
+#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
+#	  os.system("start msedge")    
+#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
+#	  os.system("start msedge")    
+#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
+#	  os.system("start msedge")    
+#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
+#	  os.system("start msedge")    
+#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
+#	  os.system("start msedge")    
+
+    
+	elif  ("exit" in p)  or ("quit" in p) or ("close" in p):
+	  pyttsx3.speak("thanks for using this services")        
+	  break
+
+	else:
+	  pyttsx3.speak("please try again using right command")
+
+
+
