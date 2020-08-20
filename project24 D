@@ -108,7 +108,7 @@ while True:
 	  pyttsx3.speak("opening VLC media player")        
 	  os.system("start vlc")    
        
-	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("python" in p)) and (("dont" not in p) and ("don`t" not in p) orand("not" not in p)):
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("python" in p)) and (("dont" not in p) and ("don`t" not in p) and("not" not in p)):
 	  pyttsx3.speak("opening python interpretor")        
 	  os.system("start python")  
             
