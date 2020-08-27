@@ -1,7 +1,9 @@
 import pyttsx3
 import os
 
-pyttsx3.speak(" hello..! how can i help you")
+print( "********************************************* \n        WELCOME TO MY PROJECT\n********************************************* \n" )
+
+pyttsx3.speak(" Welcome. how can i help you..!, which service you want to use")
 
 
 while True:
@@ -187,20 +189,10 @@ while True:
 	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("bin" in p) or ("recycle" in p)) and (("dont" not in p) and ("don`t" not in p) and ("not" not in p)):
 	  pyttsx3.speak("opening Recycle Bin folder")
 	  os.system("start explorer.exe shell:RecycleBinFolder")   
+	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and (("wikipedia" in p) or ("wiki" in p)) and (("dont" not in p) and ("don`t" not in p) and ("not" not in p)):
+	  pyttsx3.speak("opening Wikipedia")
+	  os.system("start chrome wikipedia.com") 	  
         
-#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
-#	  os.system("start msedge")    
-#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
-#	  os.system("start msedge")    
-#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
-#	  os.system("start msedge")    
-#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
-#	  os.system("start msedge")    
-#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
-#	  os.system("start msedge")    
-#	elif (("run" in p) or ("open" in p) or  ("execute" in p )) and ("" in p) and ("" in p):
-#	  os.system("start msedge")    
-
     
 	elif  ("exit" in p)  or ("quit" in p) or ("close" in p):
 	  pyttsx3.speak("thanks for using this services")        
